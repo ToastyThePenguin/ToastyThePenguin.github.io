@@ -1,0 +1,254 @@
+body{
+    background:#D1C4E9;
+}
+
+.container {
+    position: relative;
+    width: 32%;
+    height:auto;
+    display:inline-block;
+    padding:2px;
+    
+    padding-bottom:6px;
+    
+    
+}
+
+#header{
+    background-color: #40505B;
+    
+}
+.dropbtn {
+    background-color: #40505B; 
+    padding: 15px;
+    width:100%;
+    font-size: 16px;
+    border: none;
+    vertical-align: bottom;
+    cursor:pointer;
+}
+#menu-btn{
+    width:30px;
+    height 30px;
+    
+}
+.dropdown {
+    width:15%;
+    position: relative;
+    background-color: #40505B;
+    float:right;
+    height:60px;
+    
+}
+#name{
+    background-color: #40505B;
+    float:left;
+    padding-left:30px;
+    width:85%;
+    height:60px;
+    color:aliceblue;
+}
+.dropdown-content {
+    display: none;
+    background-color: #40505B;
+    min-width: 100%;
+    position:absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+
+.dropdown-content a {
+    color: aliceblue;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #0AD1B3}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: aliceblue;
+}
+
+
+
+/*BANNER STYLE*/
+.jumbotron{
+    
+    width:100%;
+    background-size:cover;
+    height:auto;
+    margin-bottom:20px;
+    display:flex;
+    background-image: url("https://i.imgsafe.org/f2636a4b45.jpg");
+
+}
+
+.jumbotron div img{
+      vertical-align: top;
+    width: 100%; /* max width */
+    opacity: 0;   
+    height:200px;
+    
+}
+
+.jumbotron div div{
+    position: absolute;
+    top:0;
+    left:0; 
+    padding:10px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    
+}
+
+.jumbotron .container{
+    width:70%;
+    
+}
+
+.jumbotron div div h3{
+    color:aliceblue;
+    margin-top: 120px;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+
+    
+}
+.jumbotron div div h5{
+    color:aliceblue;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+
+    
+}
+
+
+/*CORE*/
+
+
+.modalDialog {
+        position: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+
+    .modalDialog:target {
+        opacity:1;
+        pointer-events: auto;
+    }
+
+    .modalDialog div {
+        
+    display:flex;
+    align-items: center;
+justify-content:center;
+        padding: 5px 20px 13px 20px;
+        
+    }
+.full{
+        margin: 0;
+width:100%;}
+    .close {
+        vertical-align:top;
+        color: #FFFFFF;
+        line-height: 30px;
+        position:relative;
+        padding:5px;
+        text-align: center;
+        width: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        
+           }
+
+    .close:hover { color: #04f7d2; }
+
+.image {
+  opacity: 1;
+  display:flex;
+    margin-left:+10px;
+    
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .8s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    width:70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.4;
+}
+
+.container:hover .middle {
+  opacity: 1.0;
+}
+
+.text {
+  background-color: #0AD1B3;
+    text-align: center;
+  color: aliceblue;
+  font-size: 14px;
+  padding: 5px;
+}
+
+
+
+
+/*FOOTER STYLE*/
+.footer{
+    background:#40505B;
+    height:70px;
+    margin-bottom: 0;
+    
+    
+}
+.foot h5{
+    float:right;
+    padding:15px;
+    color:aliceblue;
+}
+.foot div{
+    float:right;
+    margin-right:3%;
+    padding:10px;
+}
+.foot a img{
+    margin:5px;
+    width:40px;
+    height:auto;
+    display:inline-block;
+    border-radius:50%;
+    
+}
+
+.foot a img:hover{
+    
+    border: 2px solid #0AD1B3;
+}

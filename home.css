@@ -1,0 +1,194 @@
+body{
+    
+    background:#0277BD;
+}
+/*HEADER STYLE*/
+
+#header{
+    background-color: #40505B;
+    
+}
+.dropbtn {
+    background-color: #40505B; 
+    padding: 15px;
+    width:100%;
+    font-size: 16px;
+    border: none;
+    vertical-align: bottom;
+    cursor:pointer;
+}
+#menu-btn{
+    width:30px;
+    height 30px;
+    
+}
+.dropdown {
+    width:15%;
+    position: relative;
+    background-color: #40505B;
+    float:right;
+    height:60px;
+    
+}
+#name{
+    background-color: #40505B;
+    float:left;
+    padding-left:30px;
+    width:85%;
+    height:60px;
+    color:aliceblue;
+}
+.dropdown-content {
+    display: none;
+    background-color: #40505B;
+    min-width: 100%;
+    position:absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+
+.dropdown-content a {
+    color: aliceblue;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #0AD1B3}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: aliceblue;
+}
+
+
+
+/*BANNER STYLE*/
+.jumbotron{
+    width:100%;
+    background-size:cover;
+    height:auto;
+    margin-bottom:0;
+    display:flex;
+    background-image: url("https://i.imgsafe.org/b0381295da.jpg");
+
+}
+
+.jumbotron .container{
+    width:70%;
+    height:20%
+}
+.jumbotron div div img{
+        width:125px;
+        height:auto;
+    border-radius:100%;
+    }
+.jumbotron div div h3{
+    color:aliceblue;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+
+    
+}
+
+
+
+/*BODY STYLE*/
+#core{
+    width:100%;
+}
+#core .row{
+    margin-bottom: -70px;
+    
+    display:inline-block;
+    
+}
+#core .row:after {
+  height:70px;
+}
+#col3{
+    padding:5%;
+    width:20%;
+    float:left;
+    margin-bottom: 0px;
+    background: no-repeat url("https://i.imgsafe.org/b037f4413c.jpg") 50% / 100%;
+    
+}
+
+#col3 img{
+      vertical-align: top;
+    width: 100%; /* max width */
+    height:500px;
+    opacity: 0;   
+    
+}
+
+#col3 div{
+    position: absolute;
+    top:0;
+    left:0;
+    padding:10px;
+    width: 100%;
+    height: 100px;
+    
+}
+
+#col9{
+    color:aliceblue;
+padding:2%;
+    width:80%;
+    float:right;
+    
+    
+    
+}
+#col9 p{
+    padding:5px;
+    background:rgba(220,220,220,0.15);
+    
+}
+
+#col9 p a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+section .row img {
+  width: 100%;
+}
+
+
+
+/*FOOTER STYLE*/
+.footer{
+    background:#40505B;
+    height:70px;
+    margin-bottom: 0;
+    
+    
+}
+.foot h5{
+    float:right;
+    padding:15px;
+    color:aliceblue;
+}
+.foot div{
+    float:right;
+    margin-right:3%;
+    padding:10px;
+}
+.foot a img{
+    margin:5px;
+    width:40px;
+    height:auto;
+    display:inline-block;
+    border-radius:50%;
+    
+}
+
+.foot a img:hover{
+    
+    border: 2px solid #0AD1B3;
+}
