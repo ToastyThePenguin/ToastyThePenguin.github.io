@@ -91,7 +91,7 @@ body{
 .jumbotron div img{
       vertical-align: top;
     width: 100%; /* max width */
-    opacity: 100%;   
+    opacity: 0;   
     height:200px;
     
 }
