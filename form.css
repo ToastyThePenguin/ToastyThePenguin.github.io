@@ -1,0 +1,178 @@
+
+/*HEADER STYLE*/
+
+#header{
+    background-color: #40505B;
+    
+}
+.dropbtn {
+    background-color: #40505B; 
+    padding: 15px;
+    width:100%;
+    font-size: 16px;
+    border: none;
+    vertical-align: bottom;
+    cursor:pointer;
+}
+#menu-btn{
+    width:30px;
+    height 30px;
+    
+}
+.dropdown {
+    width:15%;
+    position: relative;
+    background-color: #40505B;
+    float:right;
+    height:60px;
+    
+}
+#name{
+    background-color: #40505B;
+    float:left;
+    padding-left:30px;
+    width:85%;
+    height:60px;
+    color:aliceblue;
+}
+.dropdown-content {
+    display: none;
+    background-color: #40505B;
+    min-width: 100%;
+    position:absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+
+.dropdown-content a {
+    color: aliceblue;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #0AD1B3}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: aliceblue;
+}
+
+
+
+/*BANNER STYLE*/
+.jumbotron{
+    width:100%;
+    background-size:cover;
+    height:auto;
+    margin-bottom:0;
+    display:flex;
+    background-image: url("https://i.imgsafe.org/a2257b8bfd.jpg");
+
+}
+
+.jumbotron .container{
+    width:70%;
+ height:20%;
+    
+}
+.jumbotron div div h3{
+    color:aliceblue;
+    margin-top: 80px;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+
+}
+
+.jumbotron div div h4{
+    color:aliceblue;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+    
+}
+
+/*FORM STYLE*/
+
+.core{
+    margin-top:50px;
+    margin-bottom: 93px;
+}
+#message_input{
+    
+    height:200px;
+    
+    
+}
+#name_input, #address_input{
+    
+    height:50px;
+}
+
+input, textarea{
+    border:none;
+    width:300px;
+    margin:auto;
+    font-size: 16px;
+    padding:5px;
+    margin-bottom:10px;
+    display:block;
+}
+
+input:focus{
+    border:3px solid #0AD1B3;
+}
+#submit{
+    height:75px;
+    outline:none;
+    color:#0AD1B3;
+    font-weight:bold;
+    
+    background:aliceblue;
+    border:4px solid #0AD1B3;
+}
+
+#submit:hover{
+background:#0AD1B3;
+    border:4px solid aliceblue;
+    color:aliceblue;
+    
+}
+
+body{
+    
+    background: #0AD1B3;
+}
+
+
+/*FOOTER STYLE*/
+.footer{
+    background:#40505B;
+    height:70px;
+    margin-bottom: 0;
+    
+    
+}
+.foot h5{
+    float:right;
+    padding:15px;
+    color:aliceblue;
+}
+.foot div{
+    float:right;
+    margin-right:3%;
+    padding:10px;
+}
+.foot a img{
+    margin:5px;
+    width:40px;
+    height:auto;
+    display:inline-block;
+    border-radius:50%;
+    
+}
+
+.foot a img:hover{
+    
+    border: 2px solid #0AD1B3;
+}

@@ -1,0 +1,939 @@
+.section_break{
+    height:30px;
+    width: 100%;
+    
+    
+}
+/*HEADER STYLE*/
+#header{
+    background-color: #203340;
+    position: fixed;
+    width: 100%;
+    z-index:999;
+    
+}
+.dropbtn {
+    background-color: #203340; 
+    padding: 15px;
+    width:100%;
+    font-size: 16px;
+    border: none;
+    vertical-align: bottom;
+    cursor:pointer;
+}
+#menu-btn{
+    width:30px;
+    height 30px;
+    
+}
+.dropdown {
+    width:15%;
+    position: relative;
+    background-color: #203340;
+    float:right;
+    height:60px;
+    
+}
+#name{
+    background-color: #203340;
+    float:left;
+    padding-left:30px;
+    width:85%;
+    height:60px;
+    color:aliceblue;
+    font-family: monospace;
+}
+.dropdown-content {
+    display: none;
+    background-color: #203340;
+    min-width: 100%;
+    position:absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+
+.dropdown-content a {
+    color: aliceblue;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #0AD1B3}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: aliceblue;
+}
+
+/*******************************/
+
+
+
+/*BANNER STYLE*/
+#welcome.jumbotron{
+    width:100%;
+    background-size:cover;
+    height:auto;
+    margin-bottom:0;
+    display:flex;
+    background-image: url("src/crystal_3.jpg");
+
+}
+
+#welcome.jumbotron .container{
+    width:70%;
+
+    
+}
+#welcome.jumbotron div div h2{
+    color:aliceblue;
+    font-family: monospace;
+    margin-top: 20px;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+
+}
+
+#welcome.jumbotron div div h3{
+    color:aliceblue;
+    font-family: monospace;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+    
+}
+
+#welcome.jumbotron div div img{
+        width:20%;
+    margin-top: 50px;
+    border-radius:100%;
+    }
+body{background-color: #203340}
+/*******************************/
+
+
+/*WELCOME STYLE*/
+#intro{
+    width:100%;
+}
+#intro .row{
+    margin-bottom: -70px;
+    
+    display:inline-block;
+    
+}
+#intro .row:after {
+  height:70px;
+}
+#intro a{text-decoration: none; }
+/*******************************/
+
+
+/*INTRO STYLE*/
+#col3{
+    padding:5px;
+    width:25%;
+    float:left;
+    /*background: no-repeat url("src/fa5a9a_56a70edea55d410288a669044e6848c1.jpg") 50% / 100%;*/
+    
+}
+
+#col3 img{
+      vertical-align: top;
+    width: 100%; /* max width */
+       
+    
+}
+
+#col3 div{
+    position: absolute;
+    top:0;
+    left:0;
+    padding:10px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#col9{
+    color: aliceblue;
+padding:2%;
+    width:75%;
+    float:right;
+    
+    
+    
+}
+#col9 p{
+    padding:5px;
+    background:rgba(220,220,220,0.1);
+    
+}
+section .row img {
+  width: 100%;
+}
+
+/*******************************/
+
+
+/*ABOUT STYLE*/
+#about_header.jumbotron{
+    width:100%;
+    background-size:cover;
+    height:auto;
+    margin-bottom:0;
+    display:flex;
+    background-image: url("src/headers/gears_2.jpg");
+
+}
+
+#about_header.jumbotron .container{
+    width:70%;
+ height:20%;
+    
+}
+#about_header.jumbotron div div h2{
+    color:aliceblue;
+    margin-top: 10px;
+    font-family: monospace;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+
+}
+
+#about_header.jumbotron div div h3{
+    color:aliceblue;
+    font-family: monospace;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+    
+}
+
+
+#about{
+    width:100%;
+    background: #203340;
+}
+#about .row{
+    margin-bottom: -70px;
+    
+    display:inline-block;
+    
+}
+#about .row:after {
+  height:70px;
+}
+
+
+
+    
+
+
+#about .text_body{
+   
+    color:aliceblue;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+#about .text_body p{
+    padding:20px;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    
+}
+
+#about .text_body p a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
+.col-sm-4{background: #212121;
+margin: 20px;
+    
+
+    width: 30%;
+    /*float: left;*/
+    
+}
+#about img{
+    padding: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    justify-content: center;
+   
+}
+
+
+
+.text_body img{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+section .row img {
+  width: 100%;
+}
+
+#par_1{border: solid 3px #e74c3c}
+#par_2{border: solid 3px #27ae60}
+#par_3{border: solid 3px #3498db}
+
+
+
+/*******************************/
+
+
+/*GALLERY STYLE*/
+#gallery_header.jumbotron{
+    width:100%;
+    background-size:cover;
+    height:auto;
+    margin-bottom:0;
+    display:flex;
+    background-image: url("src/headers/graffit_7.jpg");
+
+}
+
+#gallery_header.jumbotron .container{
+    width:70%;
+ height:20%;
+    
+}
+#gallery_header.jumbotron div div h2{
+    color:aliceblue;
+    margin-top: 10px;
+    font-family: monospace;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+
+}
+
+#gallery_header.jumbotron div div h3{
+    color:aliceblue;
+    font-family: monospace;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+    
+}
+
+
+#gallery{align-content: center;
+justify-content: center;
+    margin-top: 30px;
+    
+}
+#gallery .container {
+    position: relative;
+    width: 30%;
+    height:auto;
+    display:inline-block;
+    padding:10px;
+    padding-bottom:15px;
+    
+    
+}
+.modalDialog {
+        position: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+
+    .modalDialog:target {
+        opacity:1;
+        pointer-events: auto;
+    }
+
+    .modalDialog div {
+        
+    display:flex;
+    align-items: center;
+justify-content:center;
+        padding: 5px 20px 13px 20px;
+        
+    }
+.full{
+        margin: 0;
+width:100%;}
+    .close {
+        vertical-align:top;
+        color: #FFFFFF;
+        line-height: 30px;
+        position:relative;
+        padding:5px;
+        text-align: center;
+        width: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        
+           }
+
+    .close:hover { color: #04f7d2; }
+
+.image {
+  opacity: 1;
+  display:flex;
+    margin-left:+10px;
+    
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .8s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    width:70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.4;
+}
+
+.container:hover .middle {
+  opacity: 1.0;
+}
+
+.text {
+  background-color: #0AD1B3;
+    text-align: center;
+  color: aliceblue;
+  font-size: 14px;
+  padding: 5px;
+}
+
+
+/*******************************/
+
+
+/*CV STYLE*/
+#cv_header.jumbotron{
+    width:100%;
+    background-size:cover;
+    height:auto;
+    margin-bottom:0;
+    display:flex;
+    background-image: url("src/headers/DSC_1165.jpg");
+
+}
+
+#cv_header.jumbotron .container{
+    width:70%;
+ height:20%;
+    
+}
+#cv_header.jumbotron div div h2{
+    color:aliceblue;
+    margin-top: 10px;
+    font-family: monospace;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+
+}
+
+#cv_header.jumbotron div div h3{
+    color:aliceblue;
+    font-family: monospace;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+    
+}
+
+#cv{
+    width:95%;
+    margin-top: 20px;
+    /*background: #CFD8DC;*/
+    
+}
+#cv .row{
+    margin-bottom: -70px;
+
+    display:block;
+    
+}
+#cv .row:after {
+  height:70px;
+}
+
+#cv .text_body{
+    display: block;
+   
+   margin-top: 0px;
+    margin: auto;
+    color:aliceblue;
+    
+}
+#skills{background: #212121}
+#work_xp{background: #212121}
+#education{background: #212121}
+.languages{background: #212121}
+.hobbies{background: #212121}
+.achievements{background: #212121}
+.leadership{background: #212121}
+
+
+.block1{
+    margin-top: 30px;
+    margin: auto;
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    align-content: center;
+}
+.block1 h4{text-align: center;}
+
+#work_xp, #education, #skills{
+    margin: 10px;
+    height: auto;
+    padding: 15px;
+    float: left;
+}
+#work_xp{width: 40%; border: solid 3px #3498db;}
+#education{width: 20%; border: solid 3px #e74c3c;}
+#skills{width: 30%; border: solid 3px #27ae60;}
+
+.block2{
+    margin-top: 30px;
+    margin: auto;
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    align-content: center;
+}
+
+.block2 h4{text-align: center;}
+.languages,  .achievements,.leadership{
+    padding: 10px;
+    margin: 5px;
+    float: left;
+    width: 30%;
+    
+    
+}
+.languages{border: solid 3px #f39c12}
+.achievements{border: solid 3px #8e44ad}
+.leadership{border: solid 3px #d35400}
+
+
+.languages img{
+    margin-top: 10px;
+    width: 17%;
+    margin-right: 3px;
+}
+#work_xp a, .leadership a {
+    
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
+#work_xp a:hover, .leadership a:hover{
+    
+    color: #0AD1B3;
+}
+
+.languages h4, .hobbies h4{
+    text-align: center;
+}
+
+
+
+
+.hobbies{
+ border: solid 3px #16a085;
+ text-align: center;
+    padding: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+    overflow-x: scroll;
+  
+   
+}
+/*
+.hobbies img{
+    width: 33%;
+    height: inherit;
+    margin: 9px;
+
+    
+}
+*/
+#download{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+#download button{
+    border: 3px solid aliceblue;
+    background-color: #212121;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#download h4{
+    color: aliceblue;
+    font-family: monospace;
+    text-align: center;
+}
+#download a{
+    color:aliceblue;
+    text-decoration: none;
+}
+#download button:hover{
+    border: 3px solid #212121;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+#download button a:hover{
+    text-decoration: none;
+    color: #212121;
+}
+#download h4: hover{
+    color: #212121;
+}
+
+/*******************************/
+
+
+/*PROJECTS STYLE*/
+#projects_header.jumbotron{
+    width:100%;
+    background-size:cover;
+    height:auto;
+    margin-bottom:0;
+    display:flex;
+    background-image: url("src/headers/crystal_1.jpg");
+
+}
+
+#projects_header.jumbotron .container{
+    width:70%;
+ height:20%;
+    
+}
+#projects_header.jumbotron div div h2{
+    color:aliceblue;
+    margin-top: 10px;
+    font-family: monospace;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+
+}
+
+#projects_header.jumbotron div div h3{
+    color:aliceblue;
+    font-family: monospace;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+    
+}
+
+#projects{
+    width:90%;
+    margin-top: 30px;
+    
+    
+}
+#projects .row{
+    margin-bottom: -70px;
+
+    display:block;
+    
+}
+#projects .row:after {
+  height:70px;
+}
+
+#projects .text_body{
+    display:block;
+   
+   margin-top: 0px;
+    margin: auto;
+    color:aliceblue;
+    
+    
+    
+    
+    
+}
+#projects .text_body p{
+    padding:20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #212121;
+}
+
+#projects .text_body a{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #212121;
+        
+}
+
+#projects .text_body hr{
+    margin-top: 40px;
+    border: 1px solid #0AD1B3;
+    color: #0AD1B3;
+}
+.thesis, .egmr, .tmp, .thesis2,.egmr2{
+        
+        margin: auto;
+    
+}
+
+.thesis{
+background-color: #212121;
+background-size: cover;
+background-repeat: repeat-y;
+display: inline-block;
+    
+
+}
+
+
+.thesis img{
+    float:left;
+    /*width:35%;*/
+    padding: 5px;
+    max-height: 200px;
+    width: auto;
+    
+}
+.thesis #par_1_prev{
+    width:65%
+        float:right;
+    
+}
+
+.thesis2{
+   background-color: #212121; 
+background-size: 100%;
+background-repeat:repeat-y;
+
+}
+.thesis2 #textArea{
+    width:100%;
+    
+}
+.thesis2 a{
+    width:100px;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    color:aliceblue;
+    
+}
+.thesis2 a:hover{
+    
+    color:#0AD1B3;
+}
+
+
+.egmr{background-color: #212121;
+background-size: cover;
+background-repeat: repeat-y;
+display: inline-block;}
+
+.egmr img{
+    float:right;
+    width:35%;
+   
+    padding: 5px;
+    
+}
+.egmr #par_2_prev{
+    float:left;
+    width:65%
+    
+}
+
+.egmr2{
+    background-color: #212121; 
+background-size: 100%;
+background-repeat:repeat-y;
+
+}
+.egmr2 #textArea2{
+    width:100%;
+    
+}
+.egmr2 a{
+    width:100px;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    color:aliceblue;
+    
+}
+.egmr2 a:hover{
+  
+    color:#0AD1B3;
+}
+
+
+
+.tmp{
+   background-color: #212121;
+background-size: cover;
+background-repeat: repeat-y;
+
+    height: 200px;
+    display: flex;
+    margin-bottom: 10px;
+    
+    
+}
+.tmp #par_3_prev{
+    text-align: center;
+    margin:auto;
+    width:100%;
+    height:200px;
+    line-height: 75px;
+}
+
+
+/*******************************/
+
+/*CONTACT STYLE*/
+#contact_header.jumbotron{
+    width:100%;
+    background-size:cover;
+    height:auto;
+    margin-bottom:0;
+    display:flex;
+    background-image: url("src/headers/DSC_1105.jpg");
+
+}
+
+#contact_header.jumbotron .container{
+    width:70%;
+ height:20%;
+    
+}
+#contact_header.jumbotron div div h2{
+    color:aliceblue;
+    font-family: monospace;
+    margin-top: 10px;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+
+}
+
+#contact_header.jumbotron div div h3{
+    color:aliceblue;
+    font-family: monospace;
+    text-shadow: 0.5px 0.5px 0.5px #000000;    
+    
+}
+
+
+#contact .core{
+    margin-top:50px;
+    margin-bottom: 93px;
+    
+}
+#message_input{
+    
+    height:200px;
+    
+    
+}
+
+#name_input, #address_input{
+    
+    height:50px;
+}
+
+input, textarea{
+    border:none;
+    width:300px;
+    margin:auto;
+    font-size: 16px;
+    padding:5px;
+    margin-bottom:10px;
+    display:block;
+    color: #203340;
+    text-align: center;
+}
+
+input:focus, textarea:focus{
+    border:2px solid #0AD1B3;
+}
+#submit{
+    height:75px;
+    outline:none;
+    color:#0AD1B3;
+    font-weight:bold;
+    
+    background:aliceblue;
+    border:2px solid #0AD1B3;
+}
+
+#submit:hover{
+background:#0AD1B3;
+    border:2px solid aliceblue;
+    color:aliceblue;
+    
+}
+
+#contact h5{
+    margin-top: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #0AD1B3
+}
+
+/*******************************/
+
+
+
+/*FOOTER STYLE*/
+.footer{
+    background:#203340;
+    height:70px;
+
+    margin-bottom: 0;
+    
+    
+}
+.foot h5{
+    float:right;
+    padding:15px;
+    color:aliceblue;
+}
+.foot div{
+    float:right;
+    margin-right:20px;
+    padding:10px;
+}
+.foot a img{
+    margin:5px;
+    width:40px;
+    height:auto;
+    display:inline-block;
+    border-radius:50%;
+    
+}
+
+.foot a img:hover{
+    
+    border: 2px solid #0AD1B3;
+}

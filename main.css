@@ -1,0 +1,71 @@
+/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } 
+/* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #203340; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } 
+/* ---- stats.js ---- */ .count-particles{  background: #203340; position: absolute; top: 48px; left: 0; width: 80px; color: #203340; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{  font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
+
+#text {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+    position: relative;
+    height: 90%;
+}
+
+.text, .text2{
+    color:aliceblue;
+    text-align: center;
+    font-family: monospace;
+    padding-bottom: 50px;
+}
+
+#btn1{
+    width:50%;
+    float:left;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+#btn2{
+    width:50%;
+    float:right;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+.container{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+
+
+button{
+    border: 3px solid aliceblue;
+    background-color: #203340;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+h4{
+    color: aliceblue;
+    font-family: monospace;
+    text-align: center;
+}
+a{
+    color:aliceblue;
+}
+button:hover{
+    border: 3px solid #203340;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 10px;
+}
+button a:hover{
+    text-decoration: none;
+    color: #203340;
+}
+h4: hover{
+    color: #111;
+}

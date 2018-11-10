@@ -1,0 +1,48 @@
+<html>
+
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="main.css">
+<script src="jquery-3.3.1.min.js"></script>
+    <script src="typed.js"></script>
+    
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    </head>
+<!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles -->  <script src="particles.js"></script>
+    <body>
+        
+        <div id="text">
+          <h1 class="text"></h1>
+      <script>
+        $(function(){
+          var typed = new Typed('.text', {
+  strings: ["HELLO THERE<BR/>WELCOME TO THE PORTFOLIO OF<BR/>ABDUL-GAFFOOR SONDAY"],
+  typeSpeed: 30, showCursor: false
+});        });
+        </script>  
+</div>
+        <div class="container">
+            <h3 class="text2"></h3>
+                  <script>
+        function Text2(){
+          var typed = new Typed('.text2', {
+  strings: ["HOW WOULD YOU LIKE TO PROCEED?"],
+  typeSpeed: 60, showCursor: false
+});        }
+    setTimeout(Text2,4000);
+    setTimeout(function(){
+document.getElementById("button1").style.visibility = "visible";
+},7000);
+    setTimeout(function(){
+document.getElementById("button2").style.visibility = "visible";
+},7200);
+        </script>  
+        <div id="btn1">
+            <button id="button1" style="visibility:hidden;"><h4 id="simple"><a href="simple.html">KEEP IT SIMPLE</a></h4></button>  
+        </div>
+        <div id="btn2">
+            <button id="button2" style="visibility:hidden;"><h4 id="fun"><a href="fun.html">LET'S HAVE SOME FUN</a></h4></button>            
+        </div>
+        </div>
+    </body>
+</html>
