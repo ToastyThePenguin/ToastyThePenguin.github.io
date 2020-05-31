@@ -8,10 +8,10 @@
   <body>
     <script type="text/javascript">
       var userAgent = navigator.userAgent || navigator.vendor;
-      var storeUrl = "https://apps.apple.com/za/app/pineapple/id1369119413"
-      var android = "https://play.google.com/store/apps/details?id=za.co.pineapple&gl=ZA";
+      var storeUrl = "https://bit.ly/getPineapple"
+      var android = "https://bit.ly/getPineapple";
       if (/android/i.test(userAgent)) {
-        url = android;
+        storeUrl = android;
       }
 
       if (mraid.getState() === ‘loading’) {
@@ -71,7 +71,7 @@
       </div>
       <button
         id="download_btn"
-        onclick="downloadNow()"
+        ontouchend="downloadNow()"
         style="background-color:#68C9D0; height: 50px; border-radius:25px; border: none; color: white; padding-left: 20px; padding-right: 20px; text-align: center"
       >
         <h3 id="simple">GET COVERED NOW</h3>
