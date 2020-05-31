@@ -8,7 +8,7 @@
   <body>
     <script type="text/javascript">
       var userAgent = navigator.userAgent || navigator.vendor;
-      var url = "https://apps.apple.com/za/app/pineapple/id1369119413"
+      var storeUrl = "https://apps.apple.com/za/app/pineapple/id1369119413"
       var android = "https://play.google.com/store/apps/details?id=za.co.pineapple&gl=ZA";
       if (/android/i.test(userAgent)) {
         url = android;
@@ -37,7 +37,7 @@
        function showMyAd() {
        }
        function downloadNow() {
-         mraid.open(url)
+         mraid.open(storeUrl)
        }
     </script>
     <div id="header" style="display: flex; flex-direction: column; justify-content:center; align-items: center; background-color: #57ABB1">
