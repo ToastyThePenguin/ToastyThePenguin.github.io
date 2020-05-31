@@ -13,6 +13,9 @@
       if (/android/i.test(userAgent)) {
         storeUrl = android;
       }
+      function downloadNow() {
+        mraid.open(storeUrl)
+      }
 
       if (mraid.getState() === ‘loading’) {
          mraid.addEventListener(‘ready’, onSdkReady);
@@ -35,9 +38,6 @@
         }
        }
        function showMyAd() {
-       }
-       function downloadNow() {
-         mraid.open(storeUrl)
        }
     </script>
     <div id="header" style="display: flex; flex-direction: column; justify-content:center; align-items: center; background-color: #57ABB1">
@@ -176,7 +176,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: #57ABB1
+        background-color: #57ABB1;
       }
       h1, h3, h4, h5{
         font-family:sans-serif;
@@ -191,6 +191,9 @@
         width: 80px;
         border-radius:6px;
         border: none;
+      }
+      .cat-button:focus, #download_btn:focus{
+        outline: none;
       }
       .number{
         color: black;
