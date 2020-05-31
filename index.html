@@ -7,6 +7,7 @@
   </head>
   <body>
     <script type="text/javascript">
+      var url = "https://bit.ly/getPineapple"
       if (mraid.getState() === ‘loading’) {
          mraid.addEventListener(‘ready’, onSdkReady);
         } else {
@@ -30,7 +31,6 @@
        function showMyAd() {
        }
        function downloadNow() {
-         var url = "https://bit.ly/getPineapple"
          mraid.open(url)
        }
     </script>
@@ -194,11 +194,11 @@
         border: 2px solid #68C9D0;
       }
       #value{
-        width: 120px;
+        width: 110px;
         text-align: center;
       }
       #premium{
-        width: 180px;
+        width: 150px;
         text-align: center;
       }
       .slider-cont{
