@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<script src="mraid.js"/>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="header" style="display: flex; flex-direction: column; justify-content:center; align-items: center; background-color: #57ABB1">
+      <div>
+        <img style="display: block; margin: 10px auto 10px;" src="./pineapple-logo.png" alt="Pineapple Logo" width=auto height="100">
+        <h1>Pineapple</h1>
+        <h3>INSURANCE IN A SNAP</h3>
+      </div>
+      <div id="button-cont" style="display: inline-block;margin-top: 30px;">
+        <button class="cat-button" id="laptop" onclick="onSelectCat(0)">
+          <img style="display: block; margin: 10px auto 10px;" src="./laptop.png" alt="laptop" width=auto height="80">
+        </button>
+        <button class="cat-button" id="phone" onclick="onSelectCat(1)">
+          <img style="display: block; margin: 10px auto 10px;" src="./phone.png" alt="phone" width=auto height="80">
+        </button>
+        <button class="cat-button" id="camera" onclick="onSelectCat(2)">
+          <img style="display: block; margin: 10px auto 10px;" src="./camera.png" alt="camera" width=auto height="80">
+        </button>
+      </div>
+      <h5>select a category</h5>
+      <div id="wrapper" style="display: flex; flex-direction: column; align-items: center; margin: 20px; width: 100%">
+        <h4 id="value" class="number"></h4>
+        <div class="slider-cont">
+          <input type="range" min="0" max="17" value="0" class="slider" id="valueRange">
+        </div>
+        <h5>slide to adjust item value</h5>
+      </div>
+      <div id="premium-cont" style="margin: 25px">
+        <h4>YOU'D PAY JUST</h4>
+        <h3 id="premium" class="number"></h3>
+      </div>
+      <button
+        id="download_btn"
+        onclick="downloadNow()"
+        style="background-color:#68C9D0; height: 60px; border-radius:30px; border: none; color: white; padding-left: 20px; padding-right: 20px; text-align: center"
+      >
+        <h3 id="simple">GET COVERED NOW</h3>
+      </button>
+    </div>
+    <script type="text/javascript">
+      if (mraid.getState() === ‘loading’) {
+         mraid.addEventListener(‘ready’, onSdkReady);
+        } else {
+         onSdkReady();
+       };
+
+       const phoneValues = [
+         1000,
+         2000,
+         3000,
+         4000,
+         5000,
+         6000,
+         7000,
+         8000,
+         9000,
+         10000,
+         12000,
+         14000,
+         16000,
+         18000,
+         20000,
+         22000,
+         24000,
+         25000
+       ];
+       const laptopCameraValues = [
+         1000,
+         2000,
+         3000,
+         4000,
+         5000,
+         6000,
+         7000,
+         8000,
+         9000,
+         10000,
+         15000,
+         20000,
+         25000,
+         30000,
+         35000,
+         40000,
+         45000,
+         50000
+       ];
+       const premCalcArray = [0.01, 0.01345, 0.00417];
+       const highlighted = "#FFD400";
+       const white = "#FFFFFF";
+
+       var slider = document.getElementById("valueRange");
+       var value = document.getElementById("value");
+       var premium = document.getElementById("premium");
+       var laptopButton = document.getElementById("laptop");
+       var phoneButton = document.getElementById("phone");
+       var cameraButton = document.getElementById("camera");
+       var selectedCat = 1;
+       var selectedIndex = slider.value;
+       var selectedValue = selectedCat === 1 ? phoneValues[selectedIndex] : laptopCameraValues[selectedIndex];
+       var selectedPremium = selectedValue * premCalcArray[selectedCat];
+      console.log(selectedIndex);
+       console.log(selectedValue);
+       console.log(selectedPremium);
+       value.innerHTML = `R${selectedValue}.00`;
+       premium.innerHTML = `R${selectedPremium.toFixed(2)} P/M`;
+       phoneButton.style.backgroundColor = highlighted;
+
+       slider.oninput = function() {
+         selectedIndex = this.value;
+         updateVals();
+       }
+
+       function onSelectCat(category){
+         selectedCat = category;
+         switch(category) {
+           case 0:
+           laptopButton.style.backgroundColor = highlighted;
+           phoneButton.style.backgroundColor = white;
+           cameraButton.style.backgroundColor = white;
+           break;
+           case 1:
+           phoneButton.style.backgroundColor = highlighted;
+           laptopButton.style.backgroundColor = white;
+           cameraButton.style.backgroundColor = white;
+           break;
+           case 2:
+           cameraButton.style.backgroundColor = highlighted;
+           phoneButton.style.backgroundColor = white;
+           laptopButton.style.backgroundColor = white;
+           break;
+         }
+         updateVals();
+       }
+
+       function updateVals(){
+         selectedValue = selectedCat === 1 ? phoneValues[selectedIndex] : laptopCameraValues[selectedIndex];
+         selectedPremium = selectedValue * premCalcArray[selectedCat];
+         value.innerHTML = `R${selectedValue}.00`;
+         premium.innerHTML = `R${selectedPremium.toFixed(2)} P/M`;
+       }
+
+
+
+        function viewableChangeHandler(viewable) {
+         // start/pause/resume gameplay, stop/play sounds
+         if(viewable) {
+         showMyAd();
+         } else {
+         }
+        }
+
+        function onSdkReady() {
+         mraid.addEventListener(‘viewableChange’, viewableChangeHandler);
+         // Wait for the ad to become viewable for the first time
+         if (mraid.isViewable()) {
+         showMyAd();
+         }
+        }
+        function showMyAd() {
+        }
+        function downloadNow() {
+          mraid.open("https://bit.ly/getPineapple")
+        }
+    </script>
+    <style type="text/css">
+      body{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #57ABB1
+      }
+      h1, h3, h4, h5{
+        font-family:sans-serif;
+        color: white;
+        margin: 5px auto 5px;
+        text-align: center;
+      }
+      .cat-button{
+        margin: 10px;
+        background-color:white;
+        height: 120px;
+        width: 120px;
+        border-radius:6px;
+        border: none;
+      }
+      .number{
+        color: black;
+        background-color: white;
+        padding: 10px;
+        border-radius: 6px;
+        border: 2px solid #68C9D0;
+      }
+      #value{
+        width: 130px;
+      }
+      #premium{
+        width: 190px;
+      }
+      .slider-cont{
+        width: 75%;
+        margin-top: 20px;
+      }
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        background: white;
+        outline: none;
+    }
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 60px;
+      border-radius: 10px;
+      background-image: url("./pineapple-logo-handle.png");
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      cursor: pointer;
+    }
+    </style>
+  </body>
+</html>
