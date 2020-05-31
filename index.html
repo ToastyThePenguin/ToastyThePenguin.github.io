@@ -7,6 +7,13 @@
   </head>
   <body>
     <script type="text/javascript">
+      var userAgent = navigator.userAgent || navigator.vendor;
+      var url = "https://bit.ly/getPineapple"
+      var android = "https://bit.ly/getPineapple";
+      if (/android/i.test(userAgent)) {
+        url = android;
+      }
+
       if (mraid.getState() === ‘loading’) {
          mraid.addEventListener(‘ready’, onSdkReady);
         } else {
@@ -30,13 +37,6 @@
        function showMyAd() {
        }
        function downloadNow() {
-         var userAgent = navigator.userAgent || navigator.vendor;
-         var url = "https://bit.ly/getPineapple"
-         var android = "https://bit.ly/getPineapple";
-         if (/android/i.test(userAgent)) {
-           url = android;
-         }
-
          mraid.open(url)
        }
     </script>
