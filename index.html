@@ -59,14 +59,14 @@
         </div>
         <h5>slide to adjust item value</h5>
       </div>
-      <div id="premium-cont" style="margin: 25px">
+      <div id="premium-cont" style="margin-bottom: 20px;">
         <h4>YOU&#39;D PAY JUST</h4>
         <h3 id="premium" class="number"></h3>
       </div>
       <button
         id="download_btn"
         onclick="downloadNow()"
-        style="background-color:#68C9D0; height: 60px; border-radius:30px; border: none; color: white; padding-left: 20px; padding-right: 20px; text-align: center"
+        style="background-color:#68C9D0; height: 50px; border-radius:25px; border: none; color: white; padding-left: 20px; padding-right: 20px; text-align: center"
       >
         <h3 id="simple">GET COVERED NOW</h3>
       </button>
@@ -126,9 +126,7 @@
        var selectedIndex = slider.value;
        var selectedValue = selectedCat === 1 ? phoneValues[selectedIndex] : laptopCameraValues[selectedIndex];
        var selectedPremium = selectedValue * premCalcArray[selectedCat];
-      console.log(selectedIndex);
-       console.log(selectedValue);
-       console.log(selectedPremium);
+
        value.innerHTML = `R${selectedValue}.00`;
        premium.innerHTML = `R${selectedPremium.toFixed(2)} P/M`;
        phoneButton.style.backgroundColor = highlighted;
@@ -142,20 +140,20 @@
          selectedCat = category;
          switch(category) {
            case 0:
-           laptopButton.style.backgroundColor = highlighted;
-           phoneButton.style.backgroundColor = white;
-           cameraButton.style.backgroundColor = white;
-           break;
+             laptopButton.style.backgroundColor = highlighted;
+             phoneButton.style.backgroundColor = white;
+             cameraButton.style.backgroundColor = white;
+             break;
            case 1:
-           phoneButton.style.backgroundColor = highlighted;
-           laptopButton.style.backgroundColor = white;
-           cameraButton.style.backgroundColor = white;
-           break;
+             phoneButton.style.backgroundColor = highlighted;
+             laptopButton.style.backgroundColor = white;
+             cameraButton.style.backgroundColor = white;
+             break;
            case 2:
-           cameraButton.style.backgroundColor = highlighted;
-           phoneButton.style.backgroundColor = white;
-           laptopButton.style.backgroundColor = white;
-           break;
+             cameraButton.style.backgroundColor = highlighted;
+             phoneButton.style.backgroundColor = white;
+             laptopButton.style.backgroundColor = white;
+             break;
          }
          updateVals();
        }
