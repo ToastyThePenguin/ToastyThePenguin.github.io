@@ -38,6 +38,9 @@
         }
        }
        function showMyAd() {
+         mraid.setOrientationProperties ( {"allowOrientationChange": false, "forceOrientation" : "portrait" } );
+        // add the below for mobile web orientation lock 
+        screen.orientation.lock("portrait-primary");
        }
     </script>
     <div id="wrapper">
@@ -178,37 +181,12 @@
         padding: 0;
         background-color: #57ABB1;
       }
-      @media screen and (orientation: portrait) {
-        #wrapper{
-          display: flex;
-          flex-direction: column;
-          justify-content:center;
-          align-items: center;
-          background-color: #57ABB1;
-        }
-      }
-      @media screen and (orientation: landcsape) {
-        #wrapper{
-          background-color: #57ABB1;
-        }
-        #header{
-          float: left;
-        }
-        #catText{
-          float: text;
-        }
-        #button-cont{
-          float: left;
-        }
-        #sliderWrapper{
-          float: right;
-        }
-        #premium-cont{
-          float: right;
-        }
-        #download_btn{
-          float: right;
-        }
+      #wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        background-color: #57ABB1;
       }
       h2, h3, h4, h5{
         font-family:sans-serif;
