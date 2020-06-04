@@ -7,8 +7,6 @@
   </head>
   <body>
     <script type="text/javascript">
-      mraid.setOrientationProperties ({"allowOrientationChange": false, "forceOrientation" : "portrait" });
-      screen.orientation.lock("portrait-primary");
       var userAgent = navigator.userAgent || navigator.vendor;
       var storeUrl = "https://apps.apple.com/za/app/pineapple/id1369119413?mt=8";
       var android = "https://play.google.com/store/apps/details?id=za.co.pineapple&gl=ZA";
@@ -181,12 +179,37 @@
         padding: 0;
         background-color: #57ABB1;
       }
-      #wrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-        background-color: #57ABB1;
+      @media screen and (orientation:portrait) {
+        #wrapper{
+          display: flex;
+          flex-direction: column;
+          justify-content:center;
+          align-items: center;
+          background-color: #57ABB1;
+        }
+      }
+      @media screen and (orientation: landscape){
+        #wrapper{
+          background-color: #57ABB1;
+        }
+        #header{
+          float: left;
+        }
+        #button-cont{
+          float: left;
+        }
+        #catText{
+          float: left;
+        }
+        #sliderWrapper{
+          float: right;
+        }
+        #premium-cont{
+          float: right;
+        }
+        #download_btn{    
+          float: right;
+        }
       }
       h2, h3, h4, h5{
         font-family:sans-serif;
@@ -221,7 +244,7 @@
         text-align: center;
       }
       .slider-cont{
-        width: 75%;
+        width: 250px;
         margin-top: 25px;
       }
       .slider {
