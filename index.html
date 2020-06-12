@@ -7,16 +7,6 @@
   </head>
   <body>
     <script type="text/javascript">
-      var userAgent = navigator.userAgent || navigator.vendor;
-      var storeUrl = "https://apps.apple.com/za/app/pineapple/id1369119413?mt=8";
-      var android = "https://play.google.com/store/apps/details?id=za.co.pineapple&gl=ZA";
-      if (/android/i.test(userAgent)) {
-        storeUrl = android;
-      }
-      function downloadNow() {
-        mraid.open(storeUrl)
-      }
-
       if (mraid.getState() === ‘loading’) {
          mraid.addEventListener(‘ready’, onSdkReady);
         } else {
@@ -83,6 +73,17 @@
       </div>
 
     </div>
+    <script type="text/javascript">
+      var userAgent = navigator.userAgent || navigator.vendor;
+      var storeUrl = "https://apps.apple.com/za/app/pineapple/id1369119413?mt=8";
+      var android = "https://play.google.com/store/apps/details?id=za.co.pineapple&gl=ZA";
+      if (/android/i.test(userAgent)) {
+        storeUrl = android;
+      }
+      function downloadNow() {
+        mraid.open(storeUrl)
+      }
+    </script>
     <script type="text/javascript">
        const phoneValues = [
          1000,
